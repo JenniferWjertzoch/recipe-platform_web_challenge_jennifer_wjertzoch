@@ -1,8 +1,14 @@
 import './App.css';
 import client from './client'
 import { useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 import Recipes from './components/Recipes'
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
 
@@ -27,12 +33,21 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Marley Spoon Recipes</h1>
-      <div className="container">
-        <Recipes allRecipes={allRecipes} />
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/recipe/:id">
+            <RecipeDetail />
+          </Route>
+          <Route path="/">
+              <h1>Marley Spoon Recipes</h1>
+              <div className="container">
+                <Recipes allRecipes={allRecipes} />
+              </div>
+          </Route>
+        </Switch>
       </div>
-    </div>
+    </Router>
   );
 }
 
