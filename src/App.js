@@ -7,6 +7,8 @@ import {
   Route
 } from "react-router-dom";
 
+import styled from "styled-components";
+
 import Recipes from './components/Recipes'
 import RecipeDetail from './components/RecipeDetail'
 
@@ -40,7 +42,7 @@ function App() {
             <RecipeDetail />
           </Route>
           <Route path="/">
-              <h1>Marley Spoon Recipes</h1>
+              <Headline>Marley Spoon Recipes</Headline>
               <div className="container">
                 <Recipes allRecipes={allRecipes} />
               </div>
@@ -52,3 +54,8 @@ function App() {
 }
 
 export default App;
+
+const Headline = styled.h1`
+  color: #686e74;
+  text-align: center;
+`
