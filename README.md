@@ -6,12 +6,34 @@ Solution by [Jennifer Wjertzoch](mailto:wjertzochjennifer@gmail.com)
 
 ## Proposed Solution
 
-*TODO: []*
+- Breaking the UI into components
+    * Recipes
+    * RecipesPage
+
+- Creating the root component App.js
+    * Create a basic setup for rendering recipes (cards for each recipe that links to a recipe detail page)
+    * Fetching Recipes from given contentful API
+    * Adding Routes by implementing react-router-dom to navigate between the different URLs
+
+- Create Recipes component
+    * This component will map through the recipes from the Contentful API
+
+- Create RecipePage component
+    * This component will take care of the recipes detail page
+
+- Add styling by using styled components
+
+- Implement testing (cypress and react testing library)
 
 
 ## Libraries / Tools Used
 
 - React.js
+- React Router Dom
+- Styled-components
+- Cypress
+- React Testing Library
+- Contentful
 
 ## Setup
 
