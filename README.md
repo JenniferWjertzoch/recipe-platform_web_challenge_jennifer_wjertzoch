@@ -1,6 +1,6 @@
-## Marley Spoon Recipes
+## Recipes Platform
 
-Show a list of Marley Spoon's recipes Contentful API to fetch the data. 
+Show a list of recipes Contentful API to fetch the data. 
 
 Solution by [Jennifer Wjertzoch](mailto:wjertzochjennifer@gmail.com)
 
